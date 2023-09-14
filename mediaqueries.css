@@ -1,8 +1,124 @@
-@media screen and (max-width:1200px){
-    #desktop-nav {
-        display:none;
-    }
-    #hamburger-nav {
-        display: flex;
-    }
+@media screen and (max-width: 1400px) {
+  #profile {
+    height: 83vh;
+    margin-bottom: 6rem;
+    margin-top: 2rem; /* Added a top margin to create separation */
+  }
+  .about-containers {
+    flex-wrap: wrap;
+    margin-bottom: 2rem; /* Added bottom margin to ensure separation from elements that follow */
+  }
+  #contact,
+  #projects {
+    height: fit-content;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #desktop-nav {
+    display: none;
+  }
+  #hamburger-nav {
+    display: flex;
+  }
+  #experience,
+  .experience-details-container {
+    margin-top: 2rem;
+  }
+  #profile,
+  .section-container {
+    display: block;
+    margin-top: 2rem; /* Ensured a top margin is present here */
+  }
+  .arrow {
+    display: none;
+  }
+  section,
+  .section-container {
+    height: fit-content;
+  }
+  section {
+    margin: 0 5%;
+  }
+  .section__pic-container {
+    width: 275px;
+    height: 275px;
+    margin: 0 auto 2rem;
+  }
+  .about-containers {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #contact,
+  footer {
+    height: 40vh;
+  }
+  #profile {
+    height: 83vh;
+    margin-bottom: 2rem; /* Adjusted bottom margin to create separation */
+  }
+  article {
+    font-size: 1rem;
+  }
+  footer nav {
+    height: fit-content;
+    margin-bottom: 2rem;
+  }
+  .about-containers,
+  .contact-info-upper-container,
+  .btn-container {
+    flex-wrap: wrap;
+    margin-bottom: 2rem; /* Added a bottom margin for separation */
+  }
+  .contact-info-container {
+    margin: 0;
+  }
+  .contact-info-container p,
+  .nav-links li a {
+    font-size: 1rem;
+  }
+  .experience-sub-title {
+    font-size: 1.25rem;
+  }
+  .logo {
+    font-size: 1.5rem;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+  .section__pic-container {
+    width: auto;
+    height: 46vw;
+    justify-content: center;
+  }
+  .section__text__p2 {
+    font-size: 1.25rem;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .text-container {
+    text-align: justify;
+  }
+}
+
+
+@media screen and (max-width: 390px) {
+  #profile {
+    height: auto; /* Changing to auto to allow the section to expand as needed */
+    margin-bottom: 2rem; /* Adjusting margins to ensure no overlap */
+    margin-top: 2rem; /* Adjusting margins to ensure no overlap */
+  }
+  .about-containers {
+    flex-wrap: wrap;
+    margin-bottom: 2rem; /* Adjusting margins to ensure no overlap */
+  }
+  /* Other necessary styles for elements within the profile and about sections to prevent overlap */
+  .section__pic-container, .text-container, .title, .section__text__p2, article {
+    margin-bottom: 1rem; /* Adding bottom margins to create some space between elements */
+  }
 }
