@@ -8,6 +8,7 @@
     flex-wrap: wrap;
     margin-bottom: 2rem; /* Added bottom margin to ensure separation from elements that follow */
   }
+  
   #contact,
   #projects {
     height: fit-content;
@@ -40,11 +41,21 @@
   section {
     margin: 0 5%;
   }
-  .section__pic-container {
+  /* .section__pic-container {
     width: 275px;
     height: 275px;
     margin: 0 auto 2rem;
+    display: flex;
+  } */
+
+
+  .section__pic-container {
+    width: auto;
+    height: 43vw;
+    justify-content: center;
+    margin-bottom: 2rem; /* Added a bottom margin to ensure separation from elements that follow */
   }
+
   .about-containers {
     margin-top: 0;
   }
@@ -107,18 +118,3 @@
 }
 
 
-@media screen and (max-width: 390px) {
-  #profile {
-    height: auto; /* Changing to auto to allow the section to expand as needed */
-    margin-bottom: 2rem; /* Adjusting margins to ensure no overlap */
-    margin-top: 2rem; /* Adjusting margins to ensure no overlap */
-  }
-  .about-containers {
-    flex-wrap: wrap;
-    margin-bottom: 2rem; /* Adjusting margins to ensure no overlap */
-  }
-  /* Other necessary styles for elements within the profile and about sections to prevent overlap */
-  .section__pic-container, .text-container, .title, .section__text__p2, article {
-    margin-bottom: 1rem; /* Adding bottom margins to create some space between elements */
-  }
-}
